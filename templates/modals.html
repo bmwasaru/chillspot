@@ -1,0 +1,47 @@
+<div class="modal" id="add-spot-modal">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">&times;</a>
+    <h3>Add a chill spot</h3>
+  </div>
+  <form id="add-spot-form" class="form-horizontal" action="/spots/add" method="POST">
+    <div class="modal-body">
+      <fieldset>
+        <div class="control-group hidden">
+          <label class="control-label" for="add-spot-lat">Latitude</label>
+          <div class="controls">
+            <input id="add-spot-lat" name="lat" class="uneditable-input"></input>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="control-group hidden">
+          <label class="control-label" for="add-spot-lng">Latitude</label>
+          <div class="controls">
+            <input id="add-spot-lng" name="lng" class="uneditable-input"></input>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="control-group">
+          <label class="control-label" for="add-spot-name">Spot Name</label>
+          <div class="controls">
+            <input id="add-spot-name" name="name" placeholder="HotspotName"></input>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="control-group">
+          <label class="control-label" for="add-spot-description">Description</label>
+          <div class="controls">
+            <textarea name="description" cols="200" rows="100"></textarea>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="modal-footer">
+      <input id="add-]spot-send" type="submit" value="Send" class="btn btn-primary"></input>
+      <a href="#" class="btn" data-dismiss="modal">Cancel</a>
+    </div>
+  </form>
+</div>
