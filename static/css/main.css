@@ -18,12 +18,12 @@ body {
     padding: 0;
 }
 
-span, p {
+/*span, p {
     font-family: 'Carmela','Helvetica Neue',Helvetica,Arial,sans-serif;
     background-color: #000;
     background-color: rgba(0,0,0,0.8);
     padding: 7px;
-}
+}*/
 
 a.orange { color: #ff6000; }
 a.orange:hover { color: #c0ff00; }

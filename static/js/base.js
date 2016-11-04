@@ -39,11 +39,24 @@ add_marker = function(name, description, lat, lng) {
     draggable: false,
     map: map
   });
+
+  var contentString = '<h1>' + name + '</h1>'+
+      '<div id="bodyContent">'+
+      '<p>' + description + '</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+
   google.maps.event.addListener(marker, 'click', function() {
     if (!description) {
       description = 'No description';
     }
-    alert('name: ' + name + ", description: " + description);
+
+    infowindow.open(map, marker);
   });
 };
 
